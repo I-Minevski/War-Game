@@ -69,15 +69,7 @@ def deal():
         else:
             war_function()
 
-        global turns
-        #turns += 1
-        print(turns)
-        if turns >= 10:
-            card_btn["state"] = DISABLED
-            if len(player1) > len(player2):
-                root.title("Player 1 wins!")
-            elif len(player1) < len(player2):
-                root.title("Player 2 wins!")
+        
 
     except:
         if len(player1) == 0:
