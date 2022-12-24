@@ -39,6 +39,12 @@ def shuffle():
     global player1, player2
     player1 = deck[:26]
     player2 = deck[26:]
+    
+    player1_image = resize_cards(f'D:\\codene\\Python\\Kinter\\STC\\Images\\cards\\0card_back.png')
+    player1_label.config(image=player1_image)
+
+    player2_image = resize_cards(f'D:\\codene\\Python\\Kinter\\STC\\Images\\cards\\0card_back.png')
+    player2_label.config(image=player2_image)
 
 
 # Deal Out Cards
